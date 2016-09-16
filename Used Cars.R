@@ -62,3 +62,7 @@ var(df$mileage)
 sd(df$mileage)
 # generate histogram of mileage
 hist(df$mileage)
+# generate boxplot
+boxplot(df$mileage)
+# set boxplot to horizontal orientation
+boxplot(df$mileage, horizontal = TRUE)
