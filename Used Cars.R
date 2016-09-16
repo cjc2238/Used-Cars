@@ -91,6 +91,9 @@ pairs(df[,-c(2,5,6)])
 # calcualte correlation matrix using numeric variables
 cor(df[,-c(2,5,6)])
 # Aggregate 
+aggregate(price ~ transmission, data =df, FUN = mean)
+# add thrid function - color - slices up the data for conditionals statistics 
+aggregate(price ~ transmission + color, data =df, FUN = mean)
 
 
 
