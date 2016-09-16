@@ -69,3 +69,5 @@ boxplot(df$mileage, horizontal = TRUE)
 ## Looking at bivariate summaries
 # Look at the relationship between transmission and mileage
 plot(mileage ~ transmission, data = df)
+# use tapply function to get the numbers from the summary statistics. This will get the mean mileage of cars with autiomatic and cars with manual transmission.
+tapply(df$mileage, df$transmission, mean)
