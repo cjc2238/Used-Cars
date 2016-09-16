@@ -48,3 +48,7 @@ table(df$transmission)
 length(df$transmission)
 # get the proprion instead of frequency by dividing the count by the length
 table(df$transmission) / length(df$transmission)
+# generate a pie chart of proptions (makes sense when comparing categorical data)
+pie(table(df$transmission) / length(df$transmission))
+# generate bar plot of transmission
+barplot(table(df$transmission))
