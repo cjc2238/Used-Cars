@@ -11,7 +11,7 @@ df4 <- read.csv("usedcars.csv", stringsAsFactors = FALSE)
 # compare the data frames
 str(df3)
 str(df4)
-# convert transmission to factor 
+# convert transmission to factor (categoricalvariables need to be converted to factors)
 df4$transmission <- factor(df4$transmission)
 # rename df4 to df
 df <- df4
