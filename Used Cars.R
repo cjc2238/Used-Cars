@@ -85,5 +85,8 @@ plot(price ~ mileage, data = df, pch=as.integer(transmission), col = as.integer(
 # add legend
 legend("topright", legend = c("AUTO", "MANUAL"), pch= c(1,2), col = c(4,5))
 # Exploring the data using multivariate statistics 
+# Create a scatterplot matrix (only feed it numeric variables)
+# selects all rows but removes columns 2, 5, and 6.
+pairs(df[,-c(2,5,6)])
 
 
