@@ -56,3 +56,7 @@ barplot(table(df$transmission))
 mean(df$mileage)
 # get the median of mileage
 median(df$mileage)
+# get variance
+var(df$mileage)
+# get standard deviation
+sd(df$mileage)
