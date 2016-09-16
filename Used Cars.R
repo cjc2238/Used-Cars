@@ -42,3 +42,9 @@ df[c(1,3, 6), "color"]
 df[c(1,3, 6), c("color","transmission")]
 # show me everything but the color (all the other features), must use column numbers and not feature names.
 df[c(1,3, 6), -c(5,6)]
+# create a table with count of elements within the data frame transmission
+table(df$transmission)
+# provide the length of the transmission data set (count of total variabled)
+length(df$transmission)
+# get the proprion instead of frequency by dividing the count by the length
+table(df$transmission) / length(df$transmission)
