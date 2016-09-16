@@ -88,5 +88,7 @@ legend("topright", legend = c("AUTO", "MANUAL"), pch= c(1,2), col = c(4,5))
 # Create a scatterplot matrix (only feed it numeric variables)
 # selects all rows but removes columns 2, 5, and 6.
 pairs(df[,-c(2,5,6)])
+# calcualte correlation matrix using numeric variables
+cor(df[,-c(2,5,6)])
 
 
