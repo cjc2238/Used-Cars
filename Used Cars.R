@@ -98,6 +98,8 @@ aggregate(price ~ transmission + color, data =df, FUN = mean)
 aggregate(price ~ transmission + color, data =df, FUN = length)
 # populate table using proportions
 table(df$transmission, df$color) / length(df$transmission)
+# round to 1 decimal place
+round(table(df$transmission, df$color) / length(df$transmission), 1)
 
 
 
