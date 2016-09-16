@@ -66,3 +66,6 @@ hist(df$mileage)
 boxplot(df$mileage)
 # set boxplot to horizontal orientation
 boxplot(df$mileage, horizontal = TRUE)
+## Looking at bivariate summaries
+# Look at the relationship between transmission and mileage
+plot(mileage ~ transmission, data = df)
