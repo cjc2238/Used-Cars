@@ -94,6 +94,11 @@ cor(df[,-c(2,5,6)])
 aggregate(price ~ transmission, data =df, FUN = mean)
 # add thrid function - color - slices up the data for conditionals statistics 
 aggregate(price ~ transmission + color, data =df, FUN = mean)
+# get count of sliced data
+aggregate(price ~ transmission + color, data =df, FUN = length)
+# populate table using proportions
+table(df$transmission, df$color) / length(df$transmission)
+
 
 
 
