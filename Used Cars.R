@@ -52,3 +52,7 @@ table(df$transmission) / length(df$transmission)
 pie(table(df$transmission) / length(df$transmission))
 # generate bar plot of transmission
 barplot(table(df$transmission))
+# get the mean of mileage
+mean(df$mileage)
+# get the median of mileage
+median(df$mileage)
