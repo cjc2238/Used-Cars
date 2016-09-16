@@ -60,3 +60,5 @@ median(df$mileage)
 var(df$mileage)
 # get standard deviation
 sd(df$mileage)
+# generate histogram of mileage
+hist(df$mileage)
