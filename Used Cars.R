@@ -1,5 +1,13 @@
+# View working directoy of my R project
+getwd()
 # Load CSV
-# Set all strings to not be factors in order to manueally create the factors later.
-df3 <- read.csv("usedcars.csv", stringsAsFactors = FALSE)
+df3 <- read.csv("usedcars.csv")
 # Inspect data frame structure
 str(df3)
+# Pull the first 6 columns and headers to view a snipet of my data
+head(df3)
+# create new data frame, this time remove factors
+df4 <- read.csv("usedcars.csv", stringsAsFactors = FALSE)
+# compare the data frames
+str(df3)
+str(df4)
