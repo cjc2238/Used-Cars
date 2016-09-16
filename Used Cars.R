@@ -76,5 +76,8 @@ tapply(df$mileage, df$transmission, sd)
 # compare numerical to numerical data
 # plot price with mileage
 plot(price ~ mileage, data = df)
-
+# add third feature (transmission) by changing the shape of the characters being plotted
+plot(price ~ mileage, data = df, pch=as.integer(transmission)
+# add color to this new plot
+plot(price ~ mileage, data = df, pch=as.integer(transmission), col = 
 
