@@ -71,3 +71,10 @@ boxplot(df$mileage, horizontal = TRUE)
 plot(mileage ~ transmission, data = df)
 # use tapply function to get the numbers from the summary statistics. This will get the mean mileage of cars with autiomatic and cars with manual transmission.
 tapply(df$mileage, df$transmission, mean)
+# use tapply and compare standard deviations
+tapply(df$mileage, df$transmission, sd)
+# compare numerical to numerical data
+# plot price with mileage
+plot(price ~ mileage, data = df)
+
+
