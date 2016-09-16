@@ -100,6 +100,8 @@ aggregate(price ~ transmission + color, data =df, FUN = length)
 table(df$transmission, df$color) / length(df$transmission)
 # round to 1 decimal place
 round(table(df$transmission, df$color) / length(df$transmission), 1)
+# create multiple box plots
+plot(price ~ transmission, data = df)
 
 
 
