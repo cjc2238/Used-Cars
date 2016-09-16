@@ -84,4 +84,6 @@ plot(price ~ mileage, data = df, pch=as.integer(transmission), col = as.integer(
 plot(price ~ mileage, data = df, pch=as.integer(transmission), col = as.integer(transmission)+3)
 # add legend
 legend("topright", legend = c("AUTO", "MANUAL"), pch= c(1,2), col = c(4,5))
+# Exploring the data using multivariate statistics 
+
 
