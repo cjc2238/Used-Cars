@@ -90,5 +90,8 @@ legend("topright", legend = c("AUTO", "MANUAL"), pch= c(1,2), col = c(4,5))
 pairs(df[,-c(2,5,6)])
 # calcualte correlation matrix using numeric variables
 cor(df[,-c(2,5,6)])
+# Aggregate 
+
+
 
 
