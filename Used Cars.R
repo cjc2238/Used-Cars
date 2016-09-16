@@ -11,7 +11,8 @@ df4 <- read.csv("usedcars.csv", stringsAsFactors = FALSE)
 # compare the data frames
 str(df3)
 str(df4)
-# convert transmission to factor (categoricalvariables need to be converted to factors)
+# convert transmission to factor (categoricalvariables need to be converted to factors) 
+# by adding the dollar sign we replace a feature within an existing data frame. 
 df4$transmission <- factor(df4$transmission)
 # rename df4 to df
 df <- df4
