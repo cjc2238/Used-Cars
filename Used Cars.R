@@ -77,7 +77,11 @@ tapply(df$mileage, df$transmission, sd)
 # plot price with mileage
 plot(price ~ mileage, data = df)
 # add third feature (transmission) by changing the shape of the characters being plotted
-plot(price ~ mileage, data = df, pch=as.integer(transmission)
-# add color to this new plot
-plot(price ~ mileage, data = df, pch=as.integer(transmission), col = 
+plot(price ~ mileage, data = df, pch=as.integer(transmission))
+# add color to transmission information plot
+plot(price ~ mileage, data = df, pch=as.integer(transmission), col = as.integer(transmission))
+# edit the color of the plot
+plot(price ~ mileage, data = df, pch=as.integer(transmission), col = as.integer(transmission)+3)
+# add legend
+legend("topright", legend = c("AUTO", "MANUAL"), pch= c(1,2), col = c(4,5))
 
